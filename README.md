@@ -1,14 +1,21 @@
-# Giphy Link Preview for Mixmax
+# Wolfram Link Preview for Mixmax
 
-This is an open source Mixmax Link Resolver. See <http://sdk.mixmax.com/docs/tutorial-giphy-link-preview> for more information about how to use this example code in Mixmax.
+This is a [Mixmax](https://mixmax.com/) Link Resolver.
+
+![Alt Text](https://github.com/tdquang/Wolfram-Alpha-Link-Resolver/img/demo.gif)
 
 ## Running locally
 
 1. Install using `npm install`
 2. Run using `npm start`
+3. Verify it works by visiting https://localhost:9146/resolver?url=https%3A%2F%2Fwww.wolframalpha.com%2Finput%2F%3Fi%3Dpineapples in your browser. It should not throw an error.
+4. Open up the Mixmax Dashboard, click integrations, and click Add Link Resolver.
+5. Enter the following for the parameters:
 
-To simulate locally how Mixmax calls the resolver URL (to return HTML that goes into the email), run:
+| Input Name  | Value |
+| ------------- | ------------- |
+| Description  | WolframAlpha (wolframalpha.com/input/?i=*)  |
+| Regular Expression  | wolframalpha\.com\/input\/\?i=[^\/]+$  |
+| Resolver URL  | https://localhost:9146/resolver  |
 
-```
-curl http://localhost:9146/resolver?url=http%3A%2F%2Fgiphy.com%2Fgifs%2Fexcited-the-office-yes-t3Mzdx0SA3Eis
-```
+6. Refresh Gmail with Mixmax installed. Click compose and paste a Wolfram Alpha url such as https://www.wolframalpha.com/input/?i=pineapples on a new line.
