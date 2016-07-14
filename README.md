@@ -4,6 +4,7 @@ This is a [Mixmax](https://mixmax.com/) Link Resolver.
 
 ![Demo](https://github.com/tdquang/Wolfram-Alpha-Link-Resolver/blob/master/img/demo.gif)
 
+
 ## Running locally
 
 1. Install using `npm install`
@@ -19,6 +20,14 @@ This is a [Mixmax](https://mixmax.com/) Link Resolver.
 | Resolver URL  | https://localhost:9146/resolver  |
 
 Refresh Gmail with Mixmax installed. Click compose and paste a Wolfram Alpha url such as https://www.wolframalpha.com/input/?i=pineapples on a new line.
+
+
+## Usage
+
+Simply go to a Wolfram Alpha page you would like to share. 
+Copy the URL and paste it in your Mixmax Gmail compose window.
+Wolfram table appears. Modify your email if you wish and click "sent". 
+The receiver will get all Wolfram information about a topic directly in their email.
 
 
 ## License
