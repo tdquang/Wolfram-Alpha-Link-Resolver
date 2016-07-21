@@ -8,8 +8,6 @@ var parseString = require('xml2js').parseString;
 // The API that returns the in-email representation.
 module.exports = function(req, res) {
   var url = req.query.url.trim();
-  // Giphy image urls are in the format:
-  // http://giphy.com/gifs/<seo-text>-<alphanumeric id>
   var matches = url.match(/\?i=([a-zA-Z0-9\+]+)$/);
   if (!matches) {
     res.status(400).send('Invalid URL format');
